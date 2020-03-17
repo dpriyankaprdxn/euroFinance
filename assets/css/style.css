@@ -88,8 +88,12 @@ body {
 }
 
 a { 
+  cursor: pointer;
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; 
 }
 
 li {
@@ -100,13 +104,31 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 50.6%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+/*logo-wrapper styling start here*/
+
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-wrapper div { display: inline-block; }
+
+.logo-wrapper .form-group { width: 74%; }
+
+.logo-wrapper .form-group input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 2%;
+}
+
+/*logo-wrapper styling end here*/
 
 
 
