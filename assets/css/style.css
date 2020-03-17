@@ -110,15 +110,31 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+
+header { 
+  width: 100%;
+  position: absolute; 
+  z-index: 1;
+}
+
+.news-header { 
+  position: relative; 
+  background: #2c5caa;
+}
+
 header .wrapper { 
   width : 100%; 
-  background: linear-gradient(to right,#005faa 0%,#1e3060 100%);
+  background: transparent;
 }
 
 /*logo-wrapper styling start here*/
 
 .logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -132,6 +148,7 @@ header .wrapper {
 .logo-wrapper div { display: inline-block; }
 
 .logo-wrapper .form-group input {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 88%;
   padding: 6px 3%;
@@ -151,7 +168,10 @@ header .wrapper {
 
 /*menu styling start here*/
 
-header .menu { background : radial-gradient(circle,#005faa 0%,#009fe3 100%); }
+header .menu { 
+  background : -o-radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
+  background : radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
+}
 
 /*nav styling strat*/
 
@@ -161,9 +181,9 @@ nav {
 }
 
 nav a { 
-  padding: 8px;  
+  padding: 8px 12px;  
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 nav li {  
@@ -254,6 +274,54 @@ nav li:not(:last-child):before {
   main styling starts here
 =================================*/
 
+/*global styling start*/
+
+h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+p {
+  letter-spacing: -1px;
+}
+/*global styling end here*/
+
+/*banner styling start*/
+
+.banner,
+.flagship-confernce {  background: #2c5daa; }
+
+.banner .wrapper { background : url('https://via.placeholder.com/880x416.png/2c5daa?text=EuroFinance'); }
+
+.flagship-confernce .wrapper { background : url('https://via.placeholder.com/880x416.png/2c5daa'); }
+
+.banner .wrapper ,
+.flagship-confernce .wrapper {
+  width: 97%;
+  padding-bottom: 400px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .banner-text {
+  width: 32%;
+  position : absolute;
+  top: 50%;
+  left : 24%;
+}
+
+.banner-text li { display: block; }
+
+.banner .banner-text p { 
+  color: #63c6ec;
+  font-size: 24px;
+  line-height: 26px;  
+}
+
+/*banner styling end*/
 
 
 
