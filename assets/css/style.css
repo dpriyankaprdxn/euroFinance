@@ -151,6 +151,18 @@ h4 {
   font-size: 10px;
 }
 
+.flagship-confernce h3,
+.newsletter h3 { color: #fff; }
+
+.form-group input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 88%;
+  padding: 6px 3%;
+  border : 1px solid rgba(67,159,227,0.3);
+  border-right: none;
+}
+
 /*common styling end here*/
 /*=================================
   Header styling starts here
@@ -181,17 +193,9 @@ header .wrapper {
   background: transparent;
 }
 
-.logo-wrapper div { display: inline-block; }
+.logo-wrapper .form-group input { margin-left: 15%; }
 
-.logo-wrapper .form-group input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 88%;
-  padding: 6px 3%;
-  border : 1px solid rgba(67,159,227,0.3);
-  border-right: none;
-  margin-left: 15%;
-}
+.logo-wrapper div { display: inline-block; }
 
 .search-button {
   padding: 7px 12px;
@@ -367,8 +371,6 @@ nav li:not(:last-child):before {
 
 /*flagship-confernce styling start*/
 
-.flagship-confernce h3 { color: #fff; }
-
 .flagship-confernce h4 { 
   width: 79%;
   margin-top: 9px; 
@@ -411,9 +413,39 @@ nav li:not(:last-child):before {
 
 /*latest-news styling end here*/
 
+/*newsletter styling start here*/
+
 .newsletter {
+  padding: 50px 0;
   background: #18376b;
 }
+
+.newsletter li { display: block; }
+
+.newsletter p { 
+  margin: 15px 0 22px;
+  color: #fff; 
+  font-size: 16px;
+}
+
+.newsletter .form-group {
+  box-sizing: border-box;
+  width: 46%;
+  margin-right: 2%;
+  display: inline-block;
+  float: left;
+}
+
+.form-container span {
+  min-height : 14px;
+  padding : 8px 2%;
+  display: block;
+  color: #FF0000;
+  font-size : 13px;
+  visibility: hidden;
+}
+
+/*newsletter styling end here*/
 
 .banner .wrapper ,
 .flagship-confernce .wrapper {
@@ -424,6 +456,12 @@ nav li:not(:last-child):before {
   background-size: cover;
 }
 
+.form-control span { 
+  padding: 7px 2%;
+  display : inline-block;
+  background: #fff;
+  color: #155724;  
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -448,7 +486,11 @@ nav li:not(:last-child):before {
 
   nav a:hover { background: #439fe3; }
 
-  .core-business a:hover { color: #151e6b; }
+  .core-business a:hover,
+  .latest-news a:hover { 
+    color: #151e6b; 
+    text-decoration : underline;
+  }
 
   .buttons:hover {
     border : 1px solid #439fe3;
