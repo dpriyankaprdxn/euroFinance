@@ -116,10 +116,14 @@ h2 {
   font-size: 30px;
 }
 
-p { letter-spacing: -1px; }
+p { 
+  color: #4a4a4a; 
+  font-size: 11px; 
+}
 
 .logo-wrapper,
-.core-business ul {
+.core-business ul,
+.latest-news ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +140,7 @@ h3 {
 
 h4 { 
   cursor: default;
-  font-size : 14px;
+  font-size : 15px;
 }
 
 .buttons { 
@@ -321,6 +325,7 @@ nav li:not(:last-child):before {
   position : absolute;
   top: 50%;
   left : 24%;
+  color : #fff;
   transform: translate(3%, -50%);
 }
 
@@ -331,6 +336,7 @@ nav li:not(:last-child):before {
 .banner .banner-text p { 
   color: #63c6ec;
   font-size: 24px;
+  letter-spacing : -1px;
   line-height: 26px;  
 }
 
@@ -366,7 +372,6 @@ nav li:not(:last-child):before {
 .flagship-confernce h4 { 
   width: 79%;
   margin-top: 9px; 
-  color: #fff;
   font-size: 18px;
 }
 
@@ -379,10 +384,36 @@ nav li:not(:last-child):before {
   width: 100%;
   margin: 14px 0 21px;
   color: #fff;
+  letter-spacing: -1px;
   font-size: 13px;
 }
 
 /*flagship-confernce styling end*/
+
+/*latest-news styling start here*/
+
+.latest-news {  margin: 43px 0 40px; }
+.latest-news ul { margin-top : 19px; }
+.latest-news a { color : #5285bc; }
+.latest-news p {  width: 90%; }
+
+.latest-news li {
+  flex-basis: 24%;
+}
+
+.latest-news span ,
+.date {
+  margin: 11px 0 6px;
+  display: inline-block;
+  color: #aaacb8;
+  font-size: 12px;
+}
+
+/*latest-news styling end here*/
+
+.newsletter {
+  background: #18376b;
+}
 
 .banner .wrapper ,
 .flagship-confernce .wrapper {
