@@ -107,6 +107,47 @@ li {
   width: 50.6%; 
   margin: 0 auto;
 }
+
+/*common styling start here*/
+
+h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+p { letter-spacing: -1px; }
+
+.logo-wrapper,
+.core-business ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #5285bc;
+  cursor: default;
+  font-size: 23px;
+}
+
+h4 { 
+  cursor: default;
+  font-size : 14px;
+}
+
+.buttons { 
+  padding: 9px 29px;
+  border : 1px solid transparent;
+  background: #439fe3;
+  color: #fff;
+  font-size: 10px;
+}
+
+/*common styling end here*/
 /*=================================
   Header styling starts here
 =================================*/
@@ -128,15 +169,6 @@ header .wrapper {
 }
 
 /*logo-wrapper styling start here*/
-
-.logo-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
 
 .logo-wrapper { 
   width: 50.6%;
@@ -274,46 +306,27 @@ nav li:not(:last-child):before {
   main styling starts here
 =================================*/
 
-/*global styling start*/
-
-h2 {
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 30px;
-}
-
-p {
-  letter-spacing: -1px;
-}
-/*global styling end here*/
-
 /*banner styling start*/
 
 .banner,
 .flagship-confernce {  background: #2c5daa; }
 
-.banner .wrapper { background : url('https://via.placeholder.com/880x416.png/2c5daa?text=EuroFinance'); }
-
-.flagship-confernce .wrapper { background : url('https://via.placeholder.com/880x416.png/2c5daa'); }
-
-.banner .wrapper ,
-.flagship-confernce .wrapper {
-  width: 97%;
-  padding-bottom: 400px;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner .wrapper { 
+  padding-bottom: 414px;
+  background : url('https://via.placeholder.com/880x416.png/2c5daa?text=EuroFinance'); 
 }
 
- .banner-text {
-  width: 32%;
+.banner-text {
+  width: 31%;
   position : absolute;
   top: 50%;
   left : 24%;
+  transform: translate(3%, -50%);
 }
 
 .banner-text li { display: block; }
+
+.banner h2 { margin-top: 74px; }
 
 .banner .banner-text p { 
   color: #63c6ec;
@@ -323,11 +336,62 @@ p {
 
 /*banner styling end*/
 
+/*core-business styling start here */
 
+.core-business { margin: 42px 0 33px; }
 
+.core-business li {
+  flex-basis: 12%;
+  text-align: center;
+}
 
+.core-business figure { 
+  margin: 17px 0 12px;
+  display: inline-block; 
+}
 
+.core-business img {
+  border : 1px solid #518bc3;
+  border-radius: 50%;
+}
 
+.core-business a { color: #518bc3; }
+
+/*core-business styling end here*/
+
+/*flagship-confernce styling start*/
+
+.flagship-confernce h3 { color: #fff; }
+
+.flagship-confernce h4 { 
+  width: 79%;
+  margin-top: 9px; 
+  color: #fff;
+  font-size: 18px;
+}
+
+.flagship-confernce .wrapper { 
+  padding-bottom: 370px;
+  background : url('https://via.placeholder.com/880x416.png/2c5daa'); 
+}
+
+.flagship-confernce p {
+  width: 100%;
+  margin: 14px 0 21px;
+  color: #fff;
+  font-size: 13px;
+}
+
+/*flagship-confernce styling end*/
+
+.banner .wrapper ,
+.flagship-confernce .wrapper {
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*=================================
   main styling ends here
@@ -352,6 +416,14 @@ p {
 @media only screen and (min-width: 1024px) {
 
   nav a:hover { background: #439fe3; }
+
+  .core-business a:hover { color: #151e6b; }
+
+  .buttons:hover {
+    border : 1px solid #439fe3;
+    background: #fff;
+    color: #439fe3;
+  }
 }  
 
 /*media query for 995px starts here*/
