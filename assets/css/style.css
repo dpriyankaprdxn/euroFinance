@@ -124,7 +124,9 @@ p {
 .logo-wrapper,
 .core-business ul,
 .latest-news ul,
-.about-treasury-network {
+.about-treasury-network,
+.top-footer,
+.footer-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,6 +144,11 @@ h3 {
 h4 { 
   cursor: default;
   font-size : 15px;
+}
+
+h6 {
+  margin : 2px 0 13px;
+  font-size: 14px;
 }
 
 .buttons { 
@@ -495,12 +502,104 @@ nav li:not(:last-child):before {
   footer styling starts here
 =================================*/ 
 
-footer { background: linear-gradient(to right,#005faa 0%,#1e3060 100%); }
+footer { 
+  padding-top : 35px;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear,left top, right top,from(#005faa),to(#1e3060));
+  background: -o-linear-gradient(left,#005faa 0%,#1e3060 100%);
+  background: linear-gradient(to right,#005faa 0%,#1e3060 100%); 
+  color: #fff;
+}
 
+.top-footer { margin-bottom: 47px; }
 
+.top-footer li:nth-child(1) { 
+  -ms-flex-preferred-size: 26%; 
+  flex-basis: 26%; 
+}
 
+.top-footer li:nth-child(2) { 
+  -ms-flex-preferred-size: 29%; 
+  flex-basis: 29%; 
+}
 
+.top-footer li:nth-child(3) { 
+  -ms-flex-preferred-size: 28%; 
+  flex-basis: 28%; 
+}
 
+.footer-nav li {  
+  margin-bottom: 2px;
+  display: block; 
+  font-size: 12px;
+}
+
+footer a { color: #fff; }
+.footer-bottom { padding: 12px 0; }
+
+.social-menu a {  
+  position: relative;
+  text-indent: -9999px; 
+}
+
+.social-menu li:not(:last-child) { margin-right: 4%; }
+.footer-bottom ul li { font-size: 9px; }
+
+.social-menu a:before {
+  padding: 8px;
+  border-radius: 50%;
+  float: right;
+  background: #fff;
+  font: 16px fontAwesome;
+  text-align: center;
+  text-indent: 0;
+}
+
+.linkedin:before { 
+  content: "\f0e1";
+  color: #3377b5; 
+}
+
+.twitter:before {
+  content: "\f099";
+  color: #47a0f2;
+}
+
+.youtube:before {
+  content: "\f04b";
+  color: #f32a20;
+}
+
+.facebook:before {
+  content: "\f09a";
+  color: #4a6ab0;
+}
+
+.wrapper + .wrapper:before { 
+  content: '';
+  width: 100%;
+  min-height: 30px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(22,53,99,0.4);
+}
+
+.footer-bottom li:first-child { flex-basis: 70%; }
+
+.footer-bottom ul li:not(:last-child) { 
+  padding-right: 0.5%;
+  border-right : 1px solid #fff; 
+}
+
+footer p {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 9px;
+}
 
  /*=================================
   footer styling ends here
@@ -518,6 +617,8 @@ footer { background: linear-gradient(to right,#005faa 0%,#1e3060 100%); }
     text-decoration : underline;
   }
 
+  footer a:hover { text-decoration: underline;  }
+
   .buttons:hover {
     border : 1px solid #439fe3;
     background: #fff;
@@ -529,6 +630,9 @@ footer { background: linear-gradient(to right,#005faa 0%,#1e3060 100%); }
     background: #439fe3;
     color: #fff;
   }
+
+  .social-menu a:hover::before { color: rgba(0,0,0,0.5); }
+
 }  
 
 /*media query for 995px starts here*/
