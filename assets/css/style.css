@@ -786,6 +786,7 @@ aside {
 
 .news span:first-of-type { 
   margin: 11px 0;
+  display: block;
   color:  #7394bf
 }
 
