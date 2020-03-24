@@ -493,7 +493,7 @@ nav li:not(:last-child):before {
 .form-container span {  font-size : 13px; }
 
 .form-group span { 
-  min-height : 30px;
+  min-height : 20px;
   padding : 8px 2%;
   display: block; 
   color: #FF0000;
@@ -1354,8 +1354,47 @@ footer p {
   /*.all-conferences li styling end here*/
 
   /*==========================================
-  conference styling end here
+  conference page styling end here
   ===========================================*/ 
+
+  /*==========================================
+  new page styling start here
+  ===========================================*/
+
+  .news > .wrapper,
+  .all-news > .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .all-conferences,
+  .all-news .wrapper,
+  .others-news-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .all-news article, .others-news-list li {
+    padding: 15px 0;
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+  }
+  
+  article figure { display: block; }
+  article a { width: 100%; }
+
+  .all-news article:not(:last-child),
+  .others-news-list li:not(:nth-child(3n)) { border-right: none; }
+
+  .all-news article:not(:last-child),
+  .others-news-list li:not(:last-child) { border-bottom: 1px solid #e5ecf3; }
+
+  /*==========================================
+  news page styling end here
+  ===========================================*/
 
   /*footer styling start here*/
 
