@@ -868,7 +868,47 @@ article figure {
 /*others-news-list styling end*/
 
 /*=================================
- must see section styling start here
+ must see section styling end here
+=================================*/
+
+/*=================================
+ aside section styling start here
+=================================*/
+
+/*newsletter sign up section styling start here*/
+
+.newsletter-sign-up {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 18px 9%;
+  margin-bottom: 14px;
+  background:  #005faa;
+  background: -webkit-gradient(linear,left top, right top,from(#1e3060),to(#005faa));
+  background: -o-linear-gradient(left,#1e3060 0%,#005faa 100%);
+  background: linear-gradient(to right,#1e3060 0%,#005faa 100%);  
+  color: #fff;
+}
+
+.newsletter-sign-up li { 
+  width: 100%;
+  display: block; 
+}
+
+.newsletter-sign-up h4 {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.newsletter-sign-up .buttons { 
+  width: 91%;
+  padding: 9px 8px;
+  text-align: center; 
+}
+
+/*newsletter sign up section styling end here*/
+
+/*=================================
+ aside section styling end here
 =================================*/
 
 /*=================================
