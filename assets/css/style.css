@@ -1524,6 +1524,36 @@ footer p {
   ===========================================*/
 }
 
+/*media query for 520px starts here*/
+@media only screen and (max-width: 540px) {
+
+  /*core-business styling start here*/
+
+  .core-business { text-align: center; }
+
+  .core-business ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .core-business li:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5ecf3;
+  }
+
+  /*core-business styling end here*/
+
+  /*flagship-confernce styling start here*/
+
+  .flagship-confernce .wrapper {  min-height: 90vh; }
+  .flagship-confernce .banner-text { width: 100%; }
+
+  /*flagship-confernce styling end here*/
+}
+
+
 /*classess for javascript*/
 
 .show { display: block; }
