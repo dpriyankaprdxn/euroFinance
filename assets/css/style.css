@@ -1333,6 +1333,30 @@ footer p {
 
   /*.about-treasury-network styling end here*/
 
+  /*==========================================
+  conference page styling start here
+  ===========================================*/ 
+
+  /*.all-conferences styling start here*/
+
+  .all-conferences li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5ecf3;
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%;
+    text-align: center;
+  }
+
+  .sign-up .form-group input { width: 100%; }
+
+  .lightbox-container { width: 45% }
+
+  /*.all-conferences li styling end here*/
+
+  /*==========================================
+  conference styling end here
+  ===========================================*/ 
+
   /*footer styling start here*/
 
   .top-footer,
