@@ -745,6 +745,38 @@ aside {
 
 /*single-news styling end here*/
 
+/*all-news styling start here*/
+
+.all-news {
+ padding: 12px 0; 
+ border-bottom: 1px solid #e5ecf3;
+ margin-bottom: 15px;
+}
+
+.news h4,
+.news h4 a { color: #47aef1; }
+
+.all-news article {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 2%; 
+  -ms-flex-preferred-size: 31.5%; 
+  flex-basis: 31.5%; 
+}
+
+.news span:first-of-type { 
+  margin: 11px 0;
+  color:  #7394bf
+}
+
+.all-news article:not(:last-child) { border-right: 1px solid #e5ecf3;  }
+article figure { overflow: hidden; }
+
+.all-conferences, 
+.others-news-list { padding-top: 10px; }
+
+/*all-news styling end here*/
+
 /*=================================
  news page styling end here
 =================================*/
@@ -985,7 +1017,8 @@ footer p {
   news  hover effect styling end here
   ===========================================*/ 
 
-  .single-news a:hover {
+  .single-news a:hover,
+  article a:hover {
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
