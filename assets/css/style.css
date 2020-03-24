@@ -707,7 +707,6 @@ conferences page styling start here
 
 /*sign-up styling end*/
 
-
 /*=================================
  conferences page styling end here
 =================================*/
@@ -837,6 +836,15 @@ footer p {
   color: #fff;
   font-size: 9px;
 }
+
+/*conferences footer styling start here*/
+
+.conferences + footer { 
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.5); 
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.5); 
+}
+
+/*conferences page styling end here*/
 
  /*=================================
   footer styling ends here
