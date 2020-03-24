@@ -8,6 +8,7 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
@@ -30,7 +31,7 @@
           <li class="form-container">
             <form action="#FIXME" method="post" class="search-form">
               <div class="form-group">
-                <input type="text" name="search" class="search">
+                <input type="text" name="search" placeholder="Search" class="search">
               </div>
               <div class="form-control">
                 <input type="button" name="search-button" class="search-button" value="Go">
@@ -38,7 +39,11 @@
             </form>
           </li>
         </ul>
-        <div class="menu">
+      </div>
+      <!-- header wrapper end here -->
+      <!-- menu wrapper start here -->
+      <div>
+        <div class="menu wrapper">
           <div class="hamburger">
             <span>1</span>
             <span>2</span>
@@ -74,7 +79,7 @@
           </nav>
         </div>
       </div> 
-      <!-- header wrapper end    -->
+      <!-- header menu wrapper end here    -->
     </header>
     <!--header section start-->
     <!--main section start-->
@@ -257,16 +262,16 @@
                   <span class="error mobile-error">Please enter valid mobile number</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="password" class="mobile" placeholder="Password">
+                  <input type="password" name="password" class="password" placeholder="Password">
                   <span class="error password-error">Please enter valid password</span>
                 </div>
                 <div class="form-group">
-                  <input type="text" name="confirm-password" class="confirm-password" placeholder="Confirm Password">
+                  <input type="password" name="confirm-password" class="confirm-password" placeholder="Confirm Password">
                   <span class="error confirm-password-error">Please enter valid confirm password</span>
                 </div>
                 <div class="form-control">
                   <input type="submit" name="subscribe" value="Subscribe" class="subscribe buttons">
-                  <span class="success">Your details successfully submitted</span>
+                  <span class="success hide">Your details successfully submitted</span>
                 </div>
               </form>
             </li>
@@ -346,6 +351,7 @@
             </ul>
           </li>
           <li>
+            <h6>Keep updated</h6>
             <ul class="social-menu">
               <li>
                 <a href="#FIXME" title="Linkedin" class="linkedin" rel="nofollow" target="_blank">Linkedin</a>
@@ -365,31 +371,33 @@
       </div>
       <!-- footer wrapper end -->
       <!-- bottom footer start -->
-      <ul class="footer-bottom wrapper">
-        <li>
-          <ul>
-            <li>
-              <a href="#FIXME" title="Terms of use">Terms of use</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Accessibility">Accessibility</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <p>
-            Copyright &copy; 2020 EuroFinance.
-          </p>
-        </li>
-      </ul>   
+      <div>
+        <ul class="footer-bottom wrapper">
+          <li>
+            <ul>
+              <li>
+                <a href="#FIXME" title="Terms of use">Terms of use</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Accessibility">Accessibility</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Copyright &copy; 2020 EuroFinance.
+            </p>
+          </li>
+        </ul>
+        <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>
+      </div>   
       <!-- bottom footer end    -->
-      <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>
     </footer>
     <!--footer section end-->
   </div>
