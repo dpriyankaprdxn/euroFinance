@@ -346,21 +346,22 @@ nav li:not(:last-child):before {
 
 /*banner styling start*/
 
-.banner,
-.flagship-confernce {  background: #2c5daa; }
+.banner {  background : url('https://via.placeholder.com/880x416.png/2c5daa?text=EuroFinance'); }
 
 .banner .wrapper { 
   padding-bottom: 414px;
-  background : url('https://via.placeholder.com/880x416.png/2c5daa?text=EuroFinance'); 
+  position: relative; 
 }
 
 .banner-text {
-  width: 31%;
+  width: 50%;
   position : absolute;
   top: 50%;
-  left : 24%;
+  left : 0;
   color : #fff;
-  transform: translate(3%, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .banner-text li { display: block; }
@@ -379,19 +380,24 @@ nav li:not(:last-child):before {
 /*core-business styling start here */
 
 .core-business { margin: 42px 0 33px; }
+.core-business img { max-width: 70px; }
 
 .core-business li {
+  -ms-flex-preferred-size: 12%;
   flex-basis: 12%;
   text-align: center;
 }
 
 .core-business figure { 
+  min-height: 70px;
   margin: 17px 0 12px;
   display: inline-block; 
 }
 
 .core-business img {
   border : 1px solid #518bc3;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
   border-radius: 50%;
 }
 
@@ -401,15 +407,19 @@ nav li:not(:last-child):before {
 
 /*flagship-confernce styling start*/
 
+.flagship-confernce .banner-text { width: 58%; }
+
 .flagship-confernce h4 { 
   width: 79%;
   margin-top: 9px; 
   font-size: 18px;
 }
 
+.flagship-confernce { background : url('https://via.placeholder.com/880x416.png/2c5daa'); }
+
 .flagship-confernce .wrapper { 
   padding-bottom: 370px;
-  background : url('https://via.placeholder.com/880x416.png/2c5daa'); 
+  position: relative;
 }
 
 .flagship-confernce p {
@@ -434,6 +444,7 @@ nav li:not(:last-child):before {
 }
 
 .latest-news li {
+  -ms-flex-preferred-size: 24%;
   flex-basis: 24%;
 }
 
@@ -451,6 +462,8 @@ nav li:not(:last-child):before {
 .newsletter {
   padding: 50px 0;
   background: #18376b;
+  background: -webkit-gradient(linear,left top, right top,from(#2a5aa3),to(#1e3060));
+  background: -o-linear-gradient(left,#2a5aa3 0%,#1e3060 100%);
   background: linear-gradient(to right,#2a5aa3 0%,#1e3060 100%);
 }
 
@@ -463,6 +476,7 @@ nav li:not(:last-child):before {
 }
 
 .newsletter .form-group {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 46%;
   margin-right: 2%;
@@ -470,13 +484,13 @@ nav li:not(:last-child):before {
   float: left;
 }
 
-.form-container span {
-  min-height : 14px;
+.form-container span {  font-size : 13px; }
+
+.form-group span { 
+  min-height : 30px;
   padding : 8px 2%;
-  display: block;
+  display: block; 
   color: #FF0000;
-  font-size : 13px;
-  visibility: hidden;
 }
 
 /*newsletter styling end here*/
@@ -484,12 +498,24 @@ nav li:not(:last-child):before {
 /*treasury-network styling start here*/
 
 .treasury-network { margin:  71px 0; }
-.about-treasury-network li { flex-basis: 50%; }
 .about-treasury-network p { margin: 12px 0 48px; }
+
+.about-treasury-network li:first-child { 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.about-treasury-network li { 
+  -ms-flex-preferred-size: 50%; 
+  flex-basis: 50%; 
+}
 
 .about-treasury-network li:last-child a {
   padding: 9px 29px;
   border : 1px solid #439fe3;
+  -webkit-border-radius: 2px; 
+  -moz-border-radius: 2px; 
   border-radius: 2px;
   margin-left: 8px;
   background: #fff;
@@ -502,7 +528,7 @@ nav li:not(:last-child):before {
 /*conferences page styling start here*/
 /*banner styling start here*/
 
-.banner span {
+.conferences-banner span {
   margin: 9px 0 17px;
   display: inline-block;
   color: #63c6ec;
@@ -510,11 +536,10 @@ nav li:not(:last-child):before {
   text-transform: capitalize;
 }
 
-.conferences .banner .wrapper { padding-bottom: 424px; }
+.conferences-banner { background : url('https://via.placeholder.com/880x416.png/2c5daa'); }
+.conferences-banner .wrapper { padding-bottom: 424px; }
 
 /*banner styling end here*/
-
-/*conferences-section styling start here*/
 
 .conferences-section { padding : 23px 0; }
 .conferences-section ul:first-child { font: 600 10px sans-serif; }
@@ -530,14 +555,13 @@ nav li:not(:last-child):before {
 
 .conferences-section h3 { margin: 18px 0 35px; }
 
-.all-conferences {
-  flex-wrap: wrap;
-}
-
 .all-conferences li {
   margin-bottom:  9px;
+  -ms-flex-preferred-size: 32%;
   flex-basis: 32%;
 }
+
+.all-conferences a { position: relative; }
 
 .image-info { padding-top : 17px; }
 
@@ -565,6 +589,8 @@ nav li:not(:last-child):before {
   top: 50%;
   left: 50%;
   background: #fff;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
 
@@ -581,16 +607,19 @@ nav li:not(:last-child):before {
   right: 3%;
   color: #000;
   font: bold 30px sans-serif;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   cursor : pointer;
-}
- 
+} 
+
 .lightbox figure { 
   border: none;
   display: block;
 }
 
 .lightbox h4 { 
+  -webkit-box-sizing: border-box; 
   box-sizing: border-box;
   margin: 15px 0;
 }
