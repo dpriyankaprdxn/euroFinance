@@ -179,7 +179,8 @@ span {
 .all-conferences,
 .become-sponsor-speaker,
 .sign-up ul,
-.news {
+.news .wrapper,
+.single-news ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,6 +723,28 @@ aside {
   flex-basis: 26%; 
 }
 
+/*single-news styling start here*/
+
+.single-news li { 
+  -ms-flex-preferred-size: 50%; 
+  flex-basis: 50%; 
+}
+
+.single-news span:first-of-type { margin-bottom : 12px; }
+.single-news li:first-child { padding: 16px 2% 10px; }
+.single-news li:last-child { overflow: hidden; }
+.single-news img { min-height: 203px; }
+.single-news ul { border: 1px solid #e5ecf3; }
+.single-news .date{ margin: 6px 0 6px; }
+.single-news a { float: right; }
+
+.single-news .wrapper { 
+  padding: 25px 0 12px;
+  border-bottom: 1px solid #e5ecf3;
+}
+
+/*single-news styling end here*/
+
 /*=================================
  news page styling end here
 =================================*/
@@ -956,6 +979,20 @@ footer p {
 
  /*==========================================
   conference  hover effect styling end here
+  ===========================================*/ 
+
+  /*==========================================
+  news  hover effect styling end here
+  ===========================================*/ 
+
+  .single-news a:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  /*==========================================
+  news  hover effect styling end here
   ===========================================*/ 
 
 }  
