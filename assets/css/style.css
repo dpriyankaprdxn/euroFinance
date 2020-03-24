@@ -194,6 +194,7 @@ span {
 }
 
 /*common styling end here*/
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -209,17 +210,12 @@ header {
   background: #2c5caa;
 }
 
-header .wrapper { 
-  width : 100%; 
-  background: transparent;
-}
+header .wrapper { background: transparent; }
 
 /*logo-wrapper styling start here*/
 
 .logo-wrapper { 
-  width: 50.6%;
   padding: 28px 0 41px; 
-  margin: 0 auto;
   background: transparent;
 }
 
@@ -241,17 +237,13 @@ header .wrapper {
 
 /*menu styling start here*/
 
-header .menu { 
+header .wrapper + div { 
+  background : #326fbb;
   background : -o-radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
   background : radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
 }
 
 /*nav styling strat*/
-
-nav { 
-  width: 50.6%;
-  margin : 0 auto;
-}
 
 nav a { 
   padding: 8px 12px;  
@@ -275,7 +267,7 @@ nav li:not(:last-child):before {
   right: 0;
 }
 
-.active { background: #439fe3; }
+.active { background: #439fe3; } 
 
 /*nav styling end*/
 
@@ -283,18 +275,16 @@ nav li:not(:last-child):before {
 
 .hamburger {
   width: 22px;
-  max-height: 20px;
+  min-height: 25px;
   display: none;
   float : right;
   position: relative;
   z-index: 1;
   cursor: pointer;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 } 
@@ -306,11 +296,9 @@ nav li:not(:last-child):before {
   background : #fff;
   text-indent: -9999px;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
@@ -322,8 +310,7 @@ nav li:not(:last-child):before {
 .hamburger.open span:nth-child(1) {
   top: 8px;
   -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
@@ -332,13 +319,12 @@ nav li:not(:last-child):before {
 .hamburger.open span:nth-child(3) {
   top: 8px;
   -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-
 /*hamburger styling end*/
 /*menu styling end here*/
+
 /*=================================
   Header styling ends here
 =================================*/  
