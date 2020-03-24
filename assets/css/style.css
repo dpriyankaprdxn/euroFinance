@@ -1206,7 +1206,8 @@ footer p {
 
   .wrapper { width : 70%; }
 
-  .core-business ul { 
+  .core-business ul,
+  .latest-news ul { 
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap; 
   }
@@ -1314,6 +1315,17 @@ footer p {
   .flagship-confernce .banner-text { width: 80%; }
 
   /*.flagship-confernce styling end here*/
+
+  /*latest-news styling start here*/
+
+  .latest-news li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5ecf3;
+    -ms-flex-preferred-size: 47%;
+    flex-basis: 47%;
+  }
+
+  /*latest-news styling end here*/
 
 } 
 
