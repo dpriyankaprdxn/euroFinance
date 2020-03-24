@@ -679,21 +679,25 @@ conferences page styling start here
  conferences page styling end here
 =================================*/
 
-.banner .wrapper ,
-.flagship-confernce .wrapper {
-  width: 100%;
-  position: relative;
+/*override style start here*/
+
+.banner ,
+.flagship-confernce {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.form-control span { 
-  padding: 7px 2%;
-  display : inline-block;
+.success { 
+  width: 40%;
+  padding: 5px 2%;
+  margin-top: 10px;
   background: #fff;
   color: #155724;  
 }
+
+/*override style end here*/
+
 /*=================================
   main styling ends here
 =================================*/
