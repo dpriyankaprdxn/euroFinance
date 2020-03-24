@@ -1426,6 +1426,38 @@ footer p {
   /*footer styling end here*/
 } 
 
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+
+ .wrapper { width: 90%; }
+
+  /*our business styling start here*/
+
+  .core-business li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+
+  /*our business styling end here*/
+
+  /*newsletter styling start here*/
+
+  .newsletter { text-align: center; }
+
+  .form-control span {
+    width: 50%;
+    margin: 10px auto; 
+  }
+
+  .newsletter .form-group { 
+    width: 100%;
+    display: block; 
+  }
+
+  /*newsletter styling end here*/
+
+}
+
 /*classess for javascript*/
 
 .show { display: block; }
