@@ -1484,6 +1484,24 @@ footer p {
   conference page styling end here
   ===========================================*/
 
+ /*==========================================
+  news page styling end here
+  ===========================================*/
+
+  .news .wrapper, 
+  .news-header .wrapper, 
+  .news + footer .wrapper { width: 90%; }
+
+  .single-news a { 
+    width: 100%;
+    float: unset; 
+  }
+
+  .single-news li { 
+    -ms-flex-preferred-size: unset; 
+    flex-basis: unset;
+  }
+
   .single-news ul,
   .about-treasury-network {
     -webkit-box-orient: vertical;
@@ -1492,6 +1510,18 @@ footer p {
     flex-direction: column-reverse;
   }
 
+  .sign-up { text-align: center; }
+  .sign-up li { padding: 15px 0; }
+
+  .sign-up .form-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+ /*==========================================
+  news page styling end here
+  ===========================================*/
 }
 
 /*classess for javascript*/
