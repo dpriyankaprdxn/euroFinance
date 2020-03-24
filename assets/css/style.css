@@ -1327,6 +1327,40 @@ footer p {
 
   /*latest-news styling end here*/
 
+  /*.about-treasury-network  styling start here*/
+
+  .about-treasury-network p { margin: 12px 0 28px; }
+
+  /*.about-treasury-network styling end here*/
+
+  /*footer styling start here*/
+
+  .top-footer,
+  .footer-bottom { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+    text-align : center;
+  }
+
+  .top-footer > li { 
+    padding: 15px 0;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;  
+  }
+
+  .footer-bottom ul li,
+  .footer-nav li { 
+    padding: 3px 0;
+    display: block; 
+  }
+
+  .footer-bottom { padding-top: 15px; }
+  .footer-bottom ul li:not(:last-child) { border-right: none; }
+  .top-footer >li:not(:last-child) { border-bottom: 1px solid #e5ecf3; }
+
+  /*footer styling end here*/
 } 
 
 /*classess for javascript*/
