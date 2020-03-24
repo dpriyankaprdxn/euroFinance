@@ -674,6 +674,39 @@ conferences page styling start here
 
 /*create-event styling end*/
 
+/*sign-up styling start*/
+
+.sign-up .form-container { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign-up {  
+  padding: 42px 0 46px;
+  background : #1e3060;
+  background: -webkit-gradient(linear,left top, right top,from(#005faa),to(#1e3060));
+  background: -o-linear-gradient(left,#005faa 0%,#1e3060 100%);
+  background: linear-gradient(to right,#005faa 0%,#1e3060 100%); 
+  color: #fff;
+}
+
+.sign-up h3 { 
+  margin-bottom: 6px;
+  color: #fff;  
+}
+
+.sign-up .form-group input { 
+  width: 231px; 
+  margin-left: 2%;
+} 
+
+.sign-up .buttons { padding: 7px 27px; }
+.sign-up ul div { display: inline-block; }
+.sign-up li:first-child { font-size: 12px; }
+
+/*sign-up styling end*/
+
 
 /*=================================
  conferences page styling end here
