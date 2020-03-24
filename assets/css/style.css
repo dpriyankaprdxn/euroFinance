@@ -525,7 +525,10 @@ nav li:not(:last-child):before {
 
 /*treasury-network styling end here*/
 
-/*conferences page styling start here*/
+/*=================================
+conferences page styling start here
+=================================*/
+
 /*banner styling start here*/
 
 .conferences-banner span {
@@ -626,7 +629,45 @@ nav li:not(:last-child):before {
 
 /*conferences-section styling end here*/
 
-/*conferences page styling end here*/
+/*become-sponsor-speaker styling start here*/
+
+.become-sponsor-speaker { padding :42px 0 17px; }
+
+.become-sponsor-speaker ul { 
+  padding-left: 12%; 
+  font-size: 12px;
+}
+
+.become-sponsor-speaker li { 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  padding   : 33px 7.5%;
+  background:  #3c72a8;
+  background : -webkit-gradient(linear,left top, right top,from(#3c72a8),to(#4a5b86));
+  background : -o-linear-gradient(left,#3c72a8  0%,#4a5b86 100%);
+  background : linear-gradient(to right,#3c72a8  0%,#4a5b86 100%); 
+  -ms-flex-preferred-size: 49%; 
+  flex-basis: 49%; 
+}
+
+.become-sponsor-speaker ul li {
+  padding: 0 0 10px 0;
+  display: list-item;
+  color:   #fff;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  list-style-type: disc;
+}
+
+.conferences .buttons { font-size: 12px; }
+.become-sponsor-speaker .buttons { padding: 9px 20px; }
+
+/*become-sponsor-speaker styling end here*/
+
+
+/*=================================
+ conferences page styling end here
+=================================*/
 
 .banner .wrapper ,
 .flagship-confernce .wrapper {
