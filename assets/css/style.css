@@ -1454,6 +1454,36 @@ footer p {
 
   /*newsletter styling end here*/
 
+  /*==========================================
+   conference page styling start here
+  ===========================================*/
+
+  .all-conferences li { 
+    -ms-flex-preferred-size: 95%; 
+    flex-basis: 95%;
+  }
+
+  .conferences-section h3 { text-align: center; }
+  .all-conferences a { width: 60%; }
+  .lightbox-container { width: 50%; }
+
+  .become-sponsor-speaker,
+  .sign-up ul,
+  .latest-news ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .become-sponsor-speaker li {
+    margin: 15px 0;
+  }
+  
+  /*==========================================
+  conference page styling end here
+  ===========================================*/
+
   .single-news ul,
   .about-treasury-network {
     -webkit-box-orient: vertical;
