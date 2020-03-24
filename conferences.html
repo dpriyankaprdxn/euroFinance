@@ -30,7 +30,7 @@
           <li class="form-container">
             <form action="#FIXME" method="post" class="search-form">
               <div class="form-group">
-                <input type="text" name="search" class="search">
+                <input type="text" name="search" placeholder="Search" class="search">
               </div>
               <div class="form-control">
                 <input type="button" name="search-button" class="search-button" value="Go">
@@ -38,7 +38,11 @@
             </form>
           </li>
         </ul>
-        <div class="menu">
+      </div>
+      <!-- header wrapper end here -->
+      <!-- menu wrapper start here -->
+      <div>
+        <div class="menu wrapper">
           <div class="hamburger">
             <span>1</span>
             <span>2</span>
@@ -47,13 +51,13 @@
           <nav>
             <ul>
               <li>
-                <a href="index.html" title="Home" class="active">Home</a>
+                <a href="index.html" title="Home">Home</a>
               </li>
               <li>
                 <a href="news.html" title="News">News</a>
               </li>
               <li>
-                <a href="conferences.html" title="Conferences">Conferences</a>
+                <a href="conferences.html" class="active" title="Conferences">Conferences</a>
               </li>
               <li>
                 <a href="#FIXME" title="Training">Training</a>
@@ -74,23 +78,23 @@
           </nav>
         </div>
       </div> 
-      <!-- header wrapper end    -->     
+      <!-- header menu wrapper end    -->     
     </header>
     <!--header section start-->
     <!--main section start-->
     <main class="conferences">
       <!-- banner section start -->
-      <section class="banner">
+      <section class="banner conferences-banner">
         <!-- banner wrapper start -->
         <div class="wrapper">
           <ul class="banner-text">
             <li>
-              <h3>Our flagship conference</h3>
+              <h2>Our flagship conference</h2>
             </li>
             <li>
-              <h4>
+              <p>
                 The most important treasury event of the year 
-              </h4>
+              </p>
             </li>
             <li>
               <span>23-25 september 2020. barcelona</span>
@@ -197,7 +201,7 @@
                 <img src="https://via.placeholder.com/206x118.png" alt="lightbox image" >
               </figure>
               <h4>Lightbox heading</h4>
-              <span>
+              <span class="contain">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </span>
             </div>
@@ -259,13 +263,15 @@
             <li>
               Sign up for the latest news and offers by email.
             </li>
-            <li class="form-container">
+            <li>
               <form action="#FIXME" method="post">
-                <div class="form-group">
-                  <input type="email" name="email" class="email" placeholder="your@email.com">
-                </div>
-                <div class="form-control">
-                  <input type="button" class="buttons" value="sign up" name="sign-up">
+                <div class="form-container">
+                  <div class="form-group">
+                    <input type="email" name="email" class="email" placeholder="your@email.com">
+                  </div>
+                  <div class="form-control">
+                    <input type="button" class="buttons" value="sign up" name="sign-up">
+                  </div>
                 </div>
               </form>
             </li>
@@ -318,6 +324,7 @@
             </ul>
           </li>
           <li>
+            <h6>Keep updated</h6>
             <ul class="social-menu">
               <li>
                 <a href="#FIXME" title="Linkedin" class="linkedin" rel="nofollow" target="_blank">Linkedin</a>
@@ -337,31 +344,32 @@
       </div>
       <!-- footer wrapper end -->
       <!-- bottom footer start -->
-      <ul class="footer-bottom wrapper">
-        <li>
-          <ul>
-            <li>
-              <a href="#FIXME" title="Terms of use">Terms of use</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Accessibility">Accessibility</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <p>
-            Copyright &copy; 2020 EuroFinance.
-          </p>
-        </li>
-      </ul>   
-      <!-- bottom footer end    -->
-      <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>     
+      <div>
+        <ul class="footer-bottom wrapper">
+          <li>
+            <ul>
+              <li>
+                <a href="#FIXME" title="Terms of use">Terms of use</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Accessibility">Accessibility</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Copyright &copy; 2020 EuroFinance.
+            </p>
+          </li>
+        </ul>
+        <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>
+      </div>     
     </footer>
     <!--footer section end-->
   </div>
