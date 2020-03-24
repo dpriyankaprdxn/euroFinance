@@ -121,21 +121,6 @@ p {
   font-size: 12px; 
 }
 
-.logo-wrapper,
-.core-business ul,
-.latest-news ul,
-.about-treasury-network,
-.top-footer,
-.footer-bottom,
-.all-conferences {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 h3 {
   color: #5285bc;
   cursor: default;
@@ -147,6 +132,11 @@ h4 {
   font-size : 15px;
 }
 
+h5 {
+  margin-bottom: 20px;
+  color: #439fe3;
+}
+
 h6 {
   margin : 2px 0 13px;
   font-size: 14px;
@@ -155,6 +145,8 @@ h6 {
 .buttons { 
   padding: 9px 29px;
   border : 1px solid transparent;
+  -webkit-border-radius: 2px; 
+  -moz-border-radius: 2px; 
   border-radius: 2px;
   background: #439fe3;
   color: #fff;
@@ -176,6 +168,26 @@ span {
   display: inline-block;
   color: #4a4a4a;
   font-size: 12px;
+}
+
+.logo-wrapper,
+.core-business ul,
+.latest-news ul,
+.about-treasury-network,
+.top-footer,
+.footer-bottom,
+.all-conferences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.all-conferences {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /*common styling end here*/
