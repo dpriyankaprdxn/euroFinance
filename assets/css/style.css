@@ -1269,3 +1269,9 @@ footer p {
 
   /*header styling end here*/
 } 
+
+/*classess for javascript*/
+
+.show { display: block; }
+.hide { display: none; }
+.overflow { overflow : hidden; }
