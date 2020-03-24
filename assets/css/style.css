@@ -1268,6 +1268,53 @@ footer p {
   .navHeight { height: 100vh; }
 
   /*header styling end here*/
+
+  /*banner styling start here*/
+
+  .banner,
+  .flagship-confernce {
+    background: #1e3060;
+    background: -o-linear-gradient(left,#2a5aa3 0%,#1e3060 100%);
+    background: -webkit-gradient(linear,left top, right top,from(#2a5aa3),to(#1e3060));
+    background: linear-gradient(to right,#2a5aa3 0%,#1e3060 100%);
+  }
+
+  .banner .wrapper { min-height: 85vh; }
+  .banner h2 { margin-top: 0; }
+
+  .banner .wrapper,
+  .flagship-confernce .wrapper {  padding: 0;  }
+
+  .banner-text { 
+    width: 100%; 
+    left : 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  /*banner styling end here*/
+
+  /*core-business styling start here*/
+
+  .core-business li {
+    padding: 10px 0;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;  
+  }
+
+  /*core-business styling end here*/
+
+  /*.flagship-confernce styling start here*/
+
+  .flagship-confernce .wrapper { min-height: 70vh; }
+  .flagship-confernce .wrapper { width: 85%; }
+  .flagship-confernce h4 { width: 100%; }
+  .flagship-confernce .banner-text { width: 80%; }
+
+  /*.flagship-confernce styling end here*/
+
 } 
 
 /*classess for javascript*/
