@@ -176,7 +176,9 @@ span {
 .about-treasury-network,
 .top-footer,
 .footer-bottom,
-.all-conferences {
+.all-conferences,
+.become-sponsor-speaker,
+.sign-up ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,6 +665,14 @@ conferences page styling start here
 .become-sponsor-speaker .buttons { padding: 9px 20px; }
 
 /*become-sponsor-speaker styling end here*/
+
+/*create-event styling start*/
+
+.create-event { padding-bottom: 32px; }
+
+.create-event p { margin: 12px 0 25px }
+
+/*create-event styling end*/
 
 
 /*=================================
