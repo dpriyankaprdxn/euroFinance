@@ -33,7 +33,7 @@
           <li class="form-container">
             <form action="#FIXME" method="post" class="search-form">
               <div class="form-group">
-                <input type="text" name="search" class="search">
+                <input type="text" name="search" placeholder="Search" class="search">
               </div>
               <div class="form-control">
                 <input type="button" name="search-button" class="search-button" value="Go">
@@ -41,7 +41,11 @@
             </form>
           </li>
         </ul>
-        <div class="menu">
+      </div>
+      <!-- header wrapper end here -->
+      <!-- header menu wrapper start here -->
+      <div>
+        <div class="menu wrapper">
           <div class="hamburger">
             <span>1</span>
             <span>2</span>
@@ -50,10 +54,10 @@
           <nav>
             <ul>
               <li>
-                <a href="index.html" title="Home" class="active">Home</a>
+                <a href="index.html" title="Home">Home</a>
               </li>
               <li>
-                <a href="news.html" title="News">News</a>
+                <a href="news.html" title="News" class="active">News</a>
               </li>
               <li>
                 <a href="conferences.html" title="Conferences">Conferences</a>
@@ -77,12 +81,13 @@
           </nav>
         </div>
       </div> 
-      <!-- header wrapper end    -->     
+      <!-- header menu wrapper end    -->     
     </header>
-    <!--header section start-->
+    <!--header section end-->
     <!--main section start-->
     <main class="news">
       <!-- main wrapper start -->
+      <div class="wrapper">
         <div class="news-content">
           <!-- single-news sub section start -->
           <div class="single-news">
@@ -363,7 +368,7 @@
                 </li>
               </ul>
               <!-- others-news-list end -->
-              <ul class="hidden-news">
+              <ul class="hidden-news others-news-list">
                 <li>
                   <span>Technology</span>
                   <h4>
@@ -459,7 +464,7 @@
                 <a href="#FIXME" class="buttons" title="Show more">Show more</a>
               </div>
             </div>    
-            <!-- must-see wrapper end             -->
+            <!-- must-see wrapper end -->
           </section>
           <!-- must-see see sub section end -->
         </div>
@@ -472,7 +477,7 @@
                 <h4>Stay up to date with news from EuroFinance</h4>
               </li>
               <li>
-                <a href="#FIXME" title="Sign up to our newsletter">Sign up to our newsletter</a>
+                <a href="#FIXME" class="buttons" title="Sign up to our newsletter">Sign up to our newsletter</a>
               </li>
             </ul>
             <section class="most-viewed">
@@ -511,6 +516,8 @@
           </div>          
         </aside>
         <!-- aside end -->
+      </div>
+      <!-- main wrapper end -->
     </main>
     <!--main section end-->
     <!--footer section start-->
@@ -555,6 +562,7 @@
             </ul>
           </li>
           <li>
+            <h6>Keep updated</h6>
             <ul class="social-menu">
               <li>
                 <a href="#FIXME" title="Linkedin" class="linkedin" rel="nofollow" target="_blank">Linkedin</a>
@@ -574,31 +582,32 @@
       </div>
       <!-- footer wrapper end -->
       <!-- bottom footer start -->
-      <ul class="footer-bottom wrapper">
-        <li>
-          <ul>
-            <li>
-              <a href="#FIXME" title="Terms of use">Terms of use</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Accessibility">Accessibility</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <p>
-            Copyright &copy; 2020 EuroFinance.
-          </p>
-        </li>
-      </ul>   
-      <!-- bottom footer end    -->
-      <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>  
+      <div>
+        <ul class="footer-bottom wrapper">
+          <li>
+            <ul>
+              <li>
+                <a href="#FIXME" title="Terms of use">Terms of use</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Privacy and cookies">Privacy and cookies</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Accessibility">Accessibility</a>
+              </li>
+              <li>
+                <a href="#FIXME" title="Manage cookie preferences">Manage cookie preferences</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Copyright &copy; 2020 EuroFinance.
+            </p>
+          </li>
+        </ul>
+        <a href="#FIXME" title="Back to top" class="back-to-top">Back to top</a>
+      </div>  
     </footer>
     <!--footer section end-->
   </div>
