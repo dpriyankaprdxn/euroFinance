@@ -178,7 +178,8 @@ span {
 .footer-bottom,
 .all-conferences,
 .become-sponsor-speaker,
-.sign-up ul {
+.sign-up ul,
+.news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,6 +710,34 @@ conferences page styling start here
 
 /*=================================
  conferences page styling end here
+=================================*/
+
+/*=================================
+ news page styling start here
+=================================*/
+
+.news .wrapper,
+.news-header .wrapper,
+.news + footer .wrapper { width: 70.5%; }
+
+.news .wrapper .wrapper { 
+  width: 100%;
+  margin: 0; 
+}
+
+.news-content { 
+  -ms-flex-preferred-size: 72%; 
+  flex-basis: 72%; 
+}
+
+aside { 
+  padding-top : 25px;
+  -ms-flex-preferred-size: 26%;
+  flex-basis: 26%; 
+}
+
+/*=================================
+ news page styling end here
 =================================*/
 
 /*override style start here*/
