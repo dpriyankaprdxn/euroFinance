@@ -813,15 +813,22 @@ footer p {
 /*media query for 1024px remove hover starts here*/
 @media only screen and (min-width: 1024px) {
 
+  /*=================================
+  index  hover effect styling start here
+  =================================*/ 
+
   nav a:hover { background: #439fe3; }
 
   .core-business a:hover,
-  .latest-news a:hover { 
+  .latest-news a:hover,
+  .news h4 a:hover { 
     color: #151e6b; 
     text-decoration : underline;
   }
 
   footer a:hover { text-decoration: underline;  }
+
+  .back-to-top:hover::before { background: rgba(0,0,0,0.9); }
 
   .buttons:hover {
     border : 1px solid #439fe3;
@@ -837,7 +844,41 @@ footer p {
 
   .social-menu a:hover::before { color: rgba(0,0,0,0.5); }
 
+  /*===================================
+  index  hover effect styling end here
+  ======================================*/ 
+
+  /*===============================================
+  conference page  hover effect styling start here
+  ===================================================*/ 
+
   .conferences-section ul:first-child a:hover { color: #2c5caa; }
+
+  .all-conferences a:hover::before {
+    content: '';
+    position: absolute;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .all-conferences a:hover::after {
+    content: "\f067";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #1c7dc6;
+    font: 25px fontAwesome;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+ /*==========================================
+  conference  hover effect styling end here
+  ===========================================*/ 
 
 }  
 
