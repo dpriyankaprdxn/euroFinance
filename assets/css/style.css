@@ -757,25 +757,26 @@ footer {
   padding-top : 35px;
   position: relative;
   z-index: 1;
-  background: -webkit-gradient(linear,left top, right top,from(#005faa),to(#1e3060));
+  background: #1e3060;
   background: -o-linear-gradient(left,#005faa 0%,#1e3060 100%);
+  background: -webkit-gradient(linear,left top, right top,from(#005faa),to(#1e3060));
   background: linear-gradient(to right,#005faa 0%,#1e3060 100%); 
   color: #fff;
 }
 
 .top-footer { margin-bottom: 47px; }
 
-.top-footer li:nth-child(1) { 
+.top-footer > li:nth-child(1) { 
   -ms-flex-preferred-size: 26%; 
   flex-basis: 26%; 
 }
 
-.top-footer li:nth-child(2) { 
+.top-footer > li:nth-child(2) { 
   -ms-flex-preferred-size: 29%; 
   flex-basis: 29%; 
 }
 
-.top-footer li:nth-child(3) { 
+.top-footer > li:nth-child(3) { 
   -ms-flex-preferred-size: 28%; 
   flex-basis: 28%; 
 }
@@ -787,7 +788,6 @@ footer {
 }
 
 footer a { color: #fff; }
-.footer-bottom { padding: 12px 0; }
 
 .social-menu a {  
   position: relative;
@@ -799,6 +799,8 @@ footer a { color: #fff; }
 
 .social-menu a:before {
   padding: 8px;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
   border-radius: 50%;
   float: right;
   background: #fff;
@@ -827,19 +829,16 @@ footer a { color: #fff; }
   color: #4a6ab0;
 }
 
-.footer-bottom:before { 
-  content: '';
-  width: 100%;
-  min-height: 30px;
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(22,53,99,0.4);
+footer .wrapper + div {
+  background: #0e3765;
 }
 
-.footer-bottom li:first-child { flex-basis: 70%; }
+.footer-bottom { padding-top : 5px; }
+
+.footer-bottom li:first-child { 
+  -ms-flex-preferred-size: 70%; 
+  flex-basis: 70%; 
+}
 
 .footer-bottom ul li:not(:last-child) { 
   padding-right: 0.5%;
@@ -850,6 +849,29 @@ footer p {
   margin-top: 5px;
   color: #fff;
   font-size: 9px;
+}
+
+.back-to-top {  
+  display: none;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.back-to-top:before {
+  content: "\f077";
+  padding: 15px;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%;
+  float: right;
+  position: fixed;
+  z-index: 2;
+  right: 5%;
+  bottom: 10%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font : 25px fontAwesome;
+  text-indent: 0;
 }
 
 /*conferences footer styling start here*/
