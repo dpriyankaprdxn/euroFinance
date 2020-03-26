@@ -59,6 +59,29 @@ window.onload = function () {
       });
     });
   }
+
+  if (getElement('main').classList.contains('news')) {
+
+    getElement('.must-see .buttons').addEventListener('click',showHiddenData);
+
+    $('.must-see-slider').slick({
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 3,     
+      responsive: [    
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
 }
 
 window.onscroll = function() {
@@ -234,4 +257,12 @@ function showImg(Changesrc,imageHeading,imageDescibe,modal) {
   modalDescibe.innerHTML = imageDescibe;
   modal.classList.add('show');
   getElement('html').classList.add('overflow');
+}
+
+// function for get hidden data
+function showHiddenData(event) {
+  event.preventDefault();
+  var hiddenUl = getElement('.hidden-news');
+  hiddenUl.classList.remove('hidden-news');
+  this.classList.add('hide');
 }
