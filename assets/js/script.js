@@ -3,7 +3,13 @@ window.onload = function () {
 
   getActiveClass(allNavAnchor);
   getElement('.hamburger').addEventListener('click',hamburgerToggle);
+  getElement('.back-to-top').addEventListener('click',scrolltoTop);
+  
 }
+
+window.onscroll = function() {
+  scrollFunction();
+};
 
 // function for get single element by name class id element name
 function getElement(elementby) {
@@ -26,4 +32,19 @@ function getActiveClass(dataForActiveElement) {
       this.className += " active";
     });
   }
+}
+
+// function for after 100px scroll element show 
+function scrollFunction() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    getElement('.back-to-top').classList.add('show');
+  } else {
+    getElement('.back-to-top').classList.remove('show');
+  }
+}
+
+// function for scroll to top
+function scrolltoTop(e) {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
