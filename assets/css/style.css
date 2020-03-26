@@ -820,18 +820,15 @@ article figure {
 
 /*must-see-slider styling start*/
 
-.must-see-slider .slick-slide {  margin : 0  10px;  }
-
-.must-see-slider .slick-list {
-  margin : 0 -10px;
-  pointer-events: none;
-}
 
 .must-see-slider { 
   padding-bottom: 10px;
   border-bottom: 1px solid #e5ecf3;
   margin-top: 10px;
 }
+
+.must-see-slider .wrapper,
+.must-see-slider { overflow: hidden; }
 
 .must-see-slider li { 
   -ms-flex-preferred-size:  33%; 
@@ -1208,26 +1205,43 @@ footer p {
 
 /*slick slider changes*/
 
+.must-see-slider .slick-list,
+.must-see-slider .slick-slide {
+  -webkit-box-sizing: border-box;  
+  box-sizing: border-box;
+}
+
 .must-see-slider .slick-slide {  margin : 0  10px;  }
 
 .must-see-slider .slick-list {
-  -webkit-box-sizing: border-box;  
-  box-sizing: border-box;
   margin : 0 -10px;
   pointer-events: none;
 }
 
-.slick-prev:before {
+.must-see-slider .slick-arrow {
+  min-height: 100%;
+  top: 44%;
+  background: rgba(255,255,255,0.5);
+}
+
+.must-see-slider .slick-prev:before {
   content: "\f104";
   color: #000;
   font : 30px FontAwesome;
 }
 
-.slick-next:before {
+.must-see-slider .slick-next:before {
   content: "\f105";
   color: #000;
   font : 30px FontAwesome;
 }
+
+.must-see-slider .slick-prev {
+  z-index: 1;
+  left: 0%;
+}
+
+.must-see-slider .slick-next {  right: -1%; }
 
 /*media query for 1200px starts here*/
 @media only screen and (max-width: 1200px) {
@@ -1539,6 +1553,8 @@ footer p {
   .news-header .wrapper, 
   .news + footer .wrapper { width: 90%; }
 
+  /*single news styling start here*/
+
   .single-news a { 
     width: 100%;
     float: unset; 
@@ -1557,6 +1573,10 @@ footer p {
     flex-direction: column-reverse;
   }
 
+  /*single news styling end here*/
+
+  /*sign-up newsletter styling start here*/
+
   .sign-up { text-align: center; }
   .sign-up li { padding: 15px 0; }
 
@@ -1565,6 +1585,16 @@ footer p {
     -ms-flex-pack: center;
     justify-content: center;
   }
+
+  /*sign up newsletter styling end here*/
+
+  /*must-see-slider slider styling start here*/
+
+  .must-see-slider { text-align: center; }
+
+  .must-see-slider .slick-slide { padding: 0 1%; }
+
+  /*must-see-slider styling end here*/
 
  /*==========================================
   news page styling end here
