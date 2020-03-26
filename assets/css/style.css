@@ -231,7 +231,10 @@ header {
 
 .news-header { 
   position: relative; 
-  background: #2c5caa;
+  background: #0e4d8e;
+  background: -o-linear-gradient(left,#005faa 0%,#1e3060 100%);
+  background: -webkit-gradient(linear,left top, right top,from(#005faa),to(#1e3060));
+  background: linear-gradient(to right,#005faa 0%,#1e3060 100%); 
 }
 
 header .wrapper { background: transparent; }
@@ -263,8 +266,8 @@ header .wrapper { background: transparent; }
 
 header .wrapper + div { 
   background : #326fbb;
-  background : -o-radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
-  background : radial-gradient(circle,#3473bd  0%,#326fbb 100%); 
+  background : -o-radial-gradient(circle,#1669b3  0%,#249ade 100%); 
+  background : radial-gradient(circle,#1669b3  0%,#249ade 100%); 
 }
 
 /*nav styling strat*/
