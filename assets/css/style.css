@@ -1011,6 +1011,7 @@ footer a { color: #fff; }
   text-indent: -9999px; 
 }
 
+.social-menu li { width : 18%; }
 .social-menu li:not(:last-child) { margin-right: 4%; }
 .footer-bottom ul li { font-size: 9px; }
 
@@ -1198,9 +1199,7 @@ footer p {
   nav a { padding: 8px; }
 
   .buttons,
-  .about-treasury-network li:last-child a
-   { padding: 9px 15px; }
-
+  .about-treasury-network li:last-child a  { padding: 9px 15px; }
 }
 
 /*media query for 995px starts here*/
@@ -1421,6 +1420,7 @@ footer p {
     display: block; 
   }
 
+  .social-menu li { width : 7%; }
   .footer-bottom { padding-top: 15px; }
   .footer-bottom ul li:not(:last-child) { border-right: none; }
   .top-footer >li:not(:last-child) { border-bottom: 1px solid #e5ecf3; }
@@ -1551,6 +1551,34 @@ footer p {
   .flagship-confernce .banner-text { width: 100%; }
 
   /*flagship-confernce styling end here*/
+
+  /*footer styling start here*/
+
+  .social-menu li { width : 15%; }
+
+  /*footer styling end here*/
+
+}
+
+/*slick slider changes*/
+
+.must-see-slider .slick-slide {  margin : 0  10px;  }
+
+.must-see-slider .slick-list {
+  margin : 0 -10px;
+  pointer-events: none;
+}
+
+.slick-prev:before {
+  content: "\f104";
+  color: #000;
+  font : 30px FontAwesome;
+}
+
+.slick-next:before {
+  content: "\f105";
+  color: #000;
+  font : 30px FontAwesome;
 }
 
 /*classess for javascript*/
