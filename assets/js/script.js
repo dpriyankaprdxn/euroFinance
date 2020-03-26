@@ -40,6 +40,25 @@ window.onload = function () {
       }
     }
   }
+
+  if (getElement('main').classList.contains('conferences')) {
+    var allImage = document.querySelectorAll('.all-conferences a');
+    var modal = getElement('.lightbox');
+    var close = getElement('.close');
+
+    modal.addEventListener('click',closeModal);
+    close.addEventListener('click',closeModalPopup);
+    allImage.forEach(function(allImagea) {
+      allImagea.addEventListener('click',function(e) {
+        e.preventDefault();
+        var imageInformation = this.parentElement.nextElementSibling;
+        var imageHeading = imageInformation.firstElementChild.innerHTML;
+        var imageDescibe = imageInformation.lastElementChild.innerHTML;
+        var imageSrc = this.firstElementChild.src;
+        showImg(imageSrc,imageHeading,imageDescibe,modal);
+      });
+    });
+  }
 }
 
 window.onscroll = function() {
@@ -185,4 +204,34 @@ function clearError(clearTime) {
       item.innerHTML= "";
     }); 
   },clearTime);
+}
+
+// function for close modal on modal click
+function closeModalPopup(e) {
+  e.preventDefault();
+  var modal = this.parentElement.parentElement;
+  modal.classList.remove('show');
+  getElement('html').classList.remove('overflow');
+}
+
+// function for close modal on close click
+function closeModal(e) {
+  e.preventDefault();
+  var modal = this;
+  if (e.target == modal) {
+    modal.classList.remove('show');
+    getElement('html').classList.remove('overflow');
+  }
+}
+
+// function for show selected modal image
+function showImg(Changesrc,imageHeading,imageDescibe,modal) {    
+  var modalImage = getElement('.lightbox-container img');
+  var modalHeading = getElement('.lightbox-container h4');
+  var modalDescibe = getElement('.contain');
+  modalImage.src= Changesrc;
+  modalHeading.innerHTML = imageHeading;
+  modalDescibe.innerHTML = imageDescibe;
+  modal.classList.add('show');
+  getElement('html').classList.add('overflow');
 }
