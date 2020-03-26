@@ -145,7 +145,7 @@ function regExp(element,msg,regexString,Errorspan) {
   if(element == "") {
     printError(Errorspan, "Please enter your "+ msg);
     Errorspan = true;
-    clearError(10000);
+    clearError(70000);
     return Errorspan;
   } 
   else {
